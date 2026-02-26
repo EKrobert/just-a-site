@@ -1,0 +1,86 @@
+/* ================================================
+   base.css — Variables CSS, reset, utilitaires
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap');
+
+/* ---- Variables globales ---- */
+:root {
+  /* Couleurs */
+  --color-primary:       #2E7D32;
+  --color-primary-light: #4CAF50;
+  --color-primary-dark:  #1B5E20;
+  --color-accent:        #00BCD4;
+  --color-white:         #FFFFFF;
+  --color-bg:            #F5F7FA;
+  --color-text:          #1A1A2E;
+  --color-text-muted:    #6B7280;
+  --color-border:        #E5E7EB;
+  --color-nav-bg:        #3DAA3D;
+
+  /* Typographie */
+  --font-body:    'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+
+  /* Espacements */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+
+  /* Ombres */
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
+
+  /* Transitions */
+  --transition: 0.22s ease;
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul { list-style: none; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  border: none;
+  background: none;
+}
+
+/* ---- Utilitaire global ---- */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
